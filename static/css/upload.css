@@ -1,0 +1,53 @@
+.banana_wallpaper {
+    background-image: url('../pics/banana_wallpaper.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.flex-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectable-image {
+    cursor: pointer;
+    border:4px solid transparent;
+}
+
+.show-more-images {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show-more-images.underline {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+img {
+
+    width: 8rem;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: border-color 0.3s ease;
+
+}
+
+.inputField {
+
+    height: 5em;
+
+}
