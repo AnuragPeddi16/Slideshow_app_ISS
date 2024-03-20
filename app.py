@@ -104,7 +104,7 @@ app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=3)
 app.secret_key = 'evenmoreextremelysupersecretkeyforsessionsecurity'
 jwt = JWTManager(app)
 
-engine = create_engine('cockroachdb://iss_project:ebaf7wlpWMMep44CdmnHEA@issproject-4069.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/issproject?sslmode=disable')
+engine = create_engine('cockroachdb://iss_project:ebaf7wlpWMMep44CdmnHEA@issproject-4069.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/issproject?sslmode=verify-full&sslrootcert='root.crt')
 cursor = engine.connect()
 
 @app.route('/')
