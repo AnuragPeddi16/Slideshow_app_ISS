@@ -127,7 +127,7 @@ def mp_cv(username, images, duration, transition, audio, resolution):
     video = video.set_audio(composite_audio)
 
     # Write the video to a file
-    video.write_videofile(os.path.join(app.root_path, 'static', 'video', username + '_video.mp4'), codec='libx264', fps=10)
+    video.write_videofile(os.path.join(app.root_path, 'static', 'video', username + '_video.mp4'), codec='libx264', fps=2)
     audio_clip.close()
 
 
