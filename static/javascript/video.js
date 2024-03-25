@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var curr_image = 0;
     var transition = 'none';
     var audio = sessionStorage.getItem('audio');
-    var res = '720';
+    var res = '480';
     
 
     playPauseBtn.addEventListener('click', function() {
